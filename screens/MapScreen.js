@@ -1,6 +1,8 @@
 import React from "react";
-import { SafeAreaView, Text, StatusBar, Platform } from "react-native";
+import { SafeAreaView, Text, StatusBar, Platform, View } from "react-native";
 import tw from "tailwind-react-native-classnames";
+import Map from "../components/Map";
+import MapView from "react-native-maps";
 
 const MapScreen = () => {
   return (
@@ -12,7 +14,11 @@ const MapScreen = () => {
         },
       ]}
     >
-      <Text>Hello</Text>
+      <View style={tw`h-1/2`}>
+        <Map />
+      </View>
+
+      <View style={tw`h-1/2`}></View>
     </SafeAreaView>
   );
 };
