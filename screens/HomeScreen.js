@@ -38,11 +38,12 @@ const HomeScreen = () => {
               })
             );
             dispatch(setDestination(null));
+            //console.log(data, details);
           }}
           fetchDetails={true}
           returnKeyType={"search"}
           enablePoweredByContainer={false}
-          minLength={29}
+          minLength={2}
           query={{ key: GOOGLE_MAPS_APIKEY, language: "en" }}
           placeholder="Where from?"
           nearbyPlacesAPI="GooglePlacesSearch"
